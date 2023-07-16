@@ -168,11 +168,10 @@ order by 1 desc;
 '''
 
 task_8 = '''
-select count(o.product_quantity),s.store_type, max(country_code) as country_code from dim_store_details  s
-inner join orders_table o
-on o.store_code = s.store_code
-inner join dim_products p
-on o.product_code = p.product_code
+select round(cast(sum(o.product_quantity*p.product_price) as numeric), 2) total_sales,s.store_type, 
+max(country_code) as country_code from dim_store_details  s
+inner join orders_table o on o.store_code = s.store_code
+inner join dim_products p on o.product_code = p.product_code
 where s.country_code = 'DE' group by s.store_type
 '''
 
