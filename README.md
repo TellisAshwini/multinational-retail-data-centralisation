@@ -96,3 +96,7 @@ In this project, the data analysed using PostgreSQL.These are the following anal
 8. *Which German store type is selling the most?*
 
     <img src = "images/task8.png" width = "300" height = "120" />
+
+This is a performace report created using Power BI
+
+<img src = "https://github.com/TellisAshwini/multinational-retail-data-centralisation/blob/main/images/power_bi_report_1.png?raw=true" width = "620" height = "400" />
